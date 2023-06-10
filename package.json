@@ -1,0 +1,16 @@
+{
+  "name": "ecord",
+  "version": "1.0.0",
+  "description": "Discord clone",
+  "main": "index.js",
+  "scripts": {
+    "css": "tailwindcss -i src/styles.css -o dist/output.css",
+    "watch-css": "tailwindcss -i src/styles.css -o dist/output.css --watch",
+    "watch-js": "webpack-dev-server --mode development --config ./webpack.config.dev.js --open --hot",
+    "dev": "concurrently \"npm:watch-*\"",
+    "build": "webpack --mode production --config ./webpack.config.prod.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Erick Lescano",
+  "license": "GPL-3.0-or-later"
+}
